@@ -4,12 +4,12 @@ body {
 #main {
   display: flex;
   flex-direction: row;
-  margin-left: 250px;
-  margin-top: 30px; }
+  justify-content: center;
+  margin: 20px; }
 
 #mainbox {
-  height: 900px;
-  width: 700px;
+  height: 800px;
+  width: 600px;
   background-color: red;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
@@ -42,8 +42,8 @@ body {
   display: flex;
   justify-content: space-around;
   border: 3px solid black;
-  width: 550px;
-  height: 400px;
+  width: 450px;
+  height: 300px;
   margin-left: 60px;
   margin-top: 10px;
   background-color: aquamarine;
@@ -90,8 +90,8 @@ img {
 
 /* right box */
 #secondbox {
-  height: 900px;
-  width: 700px;
+  height: 800px;
+  width: 600px;
   background-color: red;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
@@ -101,8 +101,8 @@ img {
   display: flex;
   justify-content: space-around;
   border: 3px solid black;
-  width: 550px;
-  height: 400px;
+  width: 450px;
+  height: 300px;
   margin-left: 70px;
   margin-top: 110px;
   background-color: aquamarine;
