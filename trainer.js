@@ -1,0 +1,1 @@
+// ------->   TRAINER CLASS GOES HERE

@@ -1,0 +1,1 @@
+// -------------> POKEMON CLASS GOES HERE
