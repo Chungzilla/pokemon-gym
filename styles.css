@@ -1,112 +1,36 @@
-body {
-  background-color: url("back.png"); }
+/*
+Error: Invalid CSS after "...076efe88bfbe113": expected "{", was ""
+        on line 153 of /Users/nycda/Desktop/WDF/projects/pokemon-gym/styles.scss
 
-#main {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 20px; }
+148:     100%{
+149:       transform: rotate(360deg)
+150:     }
+151:   }
+152: >>>>>>> 1da67df3914cc10cb9fb74126076efe88bfbe113
 
-#mainbox {
-  height: 800px;
-  width: 600px;
-  background-color: red;
-  border-top-left-radius: 35px;
-  border-top-right-radius: 35px;
-  border-bottom-right-radius: 35px; }
-
-#nav {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px; }
-
-#big-dot {
-  border-radius: 50%;
-  background-color: aqua;
-  height: 60px;
-  width: 60px; }
-
-.dot {
-  background-color: pink;
-  height: 25px;
-  width: 25px;
-  border-radius: 50%; }
-
-.dot.two {
-  background-color: orange; }
-
-.dot.three {
-  background-color: greenyellow; }
-
-#mainImg {
-  display: flex;
-  justify-content: space-around;
-  border: 3px solid black;
-  width: 450px;
-  height: 300px;
-  margin-left: 60px;
-  margin-top: 10px;
-  background-color: aquamarine;
-  border-radius: 10px;
-  border-bottom-left-radius: 70px 90px; }
-
-img {
-  width: 190px;
-  height: 300px; }
-
-/* div called btn so I could make them display flex */
-#btn {
-  display: flex; }
-
-#btnBlack {
-  border-radius: 50%;
-  background-color: black;
-  height: 40px;
-  width: 40px;
-  margin-left: 50px;
-  margin-top: 10px; }
-
-#btnYellow {
-  background-color: yellow;
-  width: 120px;
-  height: 30px;
-  border-radius: 20px;
-  margin-left: 60px;
-  font-size: 20px;
-  text-align: center;
-  margin-top: 10px;
-  color: black; }
-
-#btnPink {
-  background-color: pink;
-  width: 120px;
-  height: 30px;
-  border-radius: 20px;
-  margin-left: 130px;
-  font-size: 20px;
-  text-align: center;
-  margin-top: 10px;
-  color: black; }
-
-/* right box */
-#secondbox {
-  height: 800px;
-  width: 600px;
-  background-color: red;
-  border-top-left-radius: 35px;
-  border-top-right-radius: 35px;
-  border-bottom-left-radius: 35px; }
-
-#secondImg {
-  display: flex;
-  justify-content: space-around;
-  border: 3px solid black;
-  width: 450px;
-  height: 300px;
-  margin-left: 70px;
-  margin-top: 110px;
-  background-color: aquamarine;
-  border-radius: 10px;
-  border-bottom-right-radius: 70px 90px; }
-
-/*# sourceMappingURL=styles.css.map */
+Backtrace:
+/Users/nycda/Desktop/WDF/projects/pokemon-gym/styles.scss:153
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...076efe88bfbe113\": expected \"{\", was \"\"\A         on line 153 of /Users/nycda/Desktop/WDF/projects/pokemon-gym/styles.scss\A \A 148:     100%{\A 149:       transform: rotate(360deg)\A 150:     }\A 151:   }\A 152: >>>>>>> 1da67df3914cc10cb9fb74126076efe88bfbe113"; }
