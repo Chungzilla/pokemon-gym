@@ -2,7 +2,8 @@
 
 let firstMove = false;
 let index = 0;
-$("#btnYellow").click(()=>{
+let yellowButton = document.getElementById('btnYellow');
+yellowButton.click(()=>{
     if (firstMove === false) {
         $("#mainImg").html("<h1 id = 'trainerName'></h1>");   
         firstMove = true;
