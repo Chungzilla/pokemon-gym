@@ -24,19 +24,24 @@ body {
   border-radius: 50%;
   background-color: aqua;
   height: 60px;
-  width: 60px; }
+  width: 60px;
+  animation-duration: 2s; }
 
 .dot {
   background-color: pink;
   height: 25px;
   width: 25px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  animation-delay: 300ms;
+  animation-duration: 3s; }
 
 .dot.two {
-  background-color: orange; }
+  background-color: orange;
+  animation-delay: 600ms; }
 
 .dot.three {
-  background-color: greenyellow; }
+  background-color: greenyellow;
+  animation-delay: 1s; }
 
 #mainImg {
   display: flex;
@@ -51,7 +56,7 @@ body {
   border-bottom-left-radius: 70px 90px; }
 
 img {
-  width: 190px;
+  width: 290px;
   height: 300px; }
 
 /* div called btn so I could make them display flex */
@@ -71,7 +76,7 @@ img {
   width: 120px;
   height: 30px;
   border-radius: 20px;
-  margin-left: 60px;
+  margin-left: 40px;
   font-size: 20px;
   text-align: center;
   margin-top: 10px;
@@ -82,7 +87,7 @@ img {
   width: 120px;
   height: 30px;
   border-radius: 20px;
-  margin-left: 130px;
+  margin-left: 80px;
   font-size: 20px;
   text-align: center;
   margin-top: 10px;
@@ -108,5 +113,14 @@ img {
   background-color: aquamarine;
   border-radius: 10px;
   border-bottom-right-radius: 70px 90px; }
+
+.moving {
+  animation: ballMoving 3s infinite; }
+
+@keyframes ballMoving {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 /*# sourceMappingURL=styles.css.map */
