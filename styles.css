@@ -118,12 +118,7 @@ img {
   border-radius: 10px;
   border-bottom-right-radius: 70px 90px; }
 
-  #modalDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
+  
 
 .moving {
   animation: ballMoving 3s infinite; }

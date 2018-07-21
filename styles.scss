@@ -1,5 +1,6 @@
 $red: red;
 $imgBackground: aquamarine;
+
 body{
     background-color:url('back.png');
 }
@@ -82,7 +83,6 @@ body{
     width: 40px;
      margin-left: 50px;
      margin-top: 10px;
-  
   }
   
   #btnYellow{
@@ -95,7 +95,6 @@ body{
   text-align: center;
   margin-top: 10px;
   color: black;
-  
   }
   
   #btnPink{
@@ -132,6 +131,13 @@ body{
     background-color:$imgBackground;
     border-radius: 10px;
     border-bottom-right-radius: 70px 90px; 
+  }
+
+  #modalDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
   
   .moving{
