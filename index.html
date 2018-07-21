@@ -4,46 +4,67 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Saffron Poke Gym</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css"/>
 </head>
 <body>
     <div id="main">
         <div id="mainbox">
           <div id="nav">
-            <div id="big-dot"class="animated 1s flash"></div>
-            <div class="dot one animated 1s flash"></div>
-            <div class="dot two animated 1s flash"></div>
-            <div class="dot three animated 1s flash"></div>
+            <div id="big-dot"></div>
+            <div class="dot one"></div>
+            <div class="dot two"></div>
+            <div class="dot three"></div>
           </div>
           <div id="mainImg">
-            <img class="moving" src="http://wallpaperen.com/wp-content/uploads/2018/01/luxury-pictures-of-all-pokeballs-pokemon-pokeball-transparent-images-pokemon-images-pictures-of-all-pokeballs.png">
+            <h1>WELCOME TO SAFRON GYM</h1>
+            <p id = "caption">LOADING...</p>
           </div>
           <div id="btn">
-          <div id="btnBlack"></div>
-            <div id="btnYellow">left</div>
-              <div id="btnPink">right</div>
-            </div>
-           
-          
-   
+            <div id="btnBlack"></div>
+            <button id="btnYellow">left</button>
+            <button id="btnPink">right</button>
+          </div>
         </div>
         <div id="secondbox">
-          <div id="secondImg"></div>
-         
+          <div id="secondImg">
+          </div>
         </div>
-        </div>
+    </div>
 
+    <div class="modal" id="showPokemon">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 id = "pokemonModalName" class="modal-title"></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div id = "modalDiv">
+                <div> 
+              </div>
+              
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+              
+            </div>
+          </div>
+    </div>
 
     <!-- <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script> -->
-    <script src="main.js"></script>
-    <script src="pokemon.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js" integrity="sha384-CS0nxkpPy+xUkNGhObAISrkg/xjb3USVCwy+0/NMzd5VxgY4CMCyTkItmy5n0voC" crossorigin="anonymous"></script>
     <script src="trainer.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+    <script src="main.js"></script> 
 </body>
 </html>
