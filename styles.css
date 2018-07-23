@@ -138,10 +138,14 @@ img {
   margin-top: 20px; }
 
 #badge {
+  position: relative;
   width: 60px;
-  height: 60px; 
-  display: inline-block;
-}
+  height: 60px; }
+
+#profilePic {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px; }
 
 #history1 {
   margin-top: 50px;
@@ -157,14 +161,3 @@ img {
   color: aquamarine; }
 
 /*# sourceMappingURL=styles.css.map */
-.pokemonSelected {
-  background-color: blue;
-  color: white;
-}
-#trainerHolder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  width: auto;
-}
