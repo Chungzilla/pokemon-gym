@@ -4,10 +4,11 @@ $("#btnYellow").prop("disabled", true);
 let allAjaxDone = 0;
 let doneLoading = false;
 class trainerClass {
-    constructor(pokemon1,pokemon2,pokemon3, trainerName) {
+    constructor(pokemon1,pokemon2,pokemon3, trainerName, profilePic) {
         this.myPokemonNames = [pokemon1,pokemon2,pokemon3];
         this.myPokemonObjects = [];
         this.trainerName = trainerName;
+        this.profilePic = profilePic;
     }
     getMyPokemon() {
         var self = this;
@@ -37,13 +38,13 @@ class trainerClass {
         });
     }
 }
-let jazmine = new trainerClass("bulbasaur","meowth","squirtle", "jazmine");
-let messi = new trainerClass("victini", "butterfree", "mimikyu-disguised", "messi");
-let jorge = new trainerClass("voltorb", "geodude", "poliwag", "jorge");
-jazmine.getMyPokemon();
+let kanye = new trainerClass("bulbasaur","meowth","squirtle", "kanye", "kanyePic.jpg");
+let messi = new trainerClass("victini", "butterfree", "mimikyu-disguised", "messi", "messiPic.jpg");
+let jorge = new trainerClass("voltorb", "geodude", "poliwag", "jorge", "jorgePic.jpg");
+kanye.getMyPokemon();
 messi.getMyPokemon();
 jorge.getMyPokemon();
-let safronGym = [jazmine,jorge,messi];
+let safronGym = [kanye,jorge,messi];
 console.log("ARRAY OF ALL 3 TRAINERS:");
 console.log(safronGym);
 console.log("-------------------");
