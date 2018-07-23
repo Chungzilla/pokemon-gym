@@ -13,11 +13,11 @@
  
  
  
- #Build with 
- *JavaScript 
- *Bootstrap
+ # Build with 
+ * JavaScript 
+ * Bootstrap
  
- #Authors
+ # Authors
 ![ Jazmine (https://github.com/Chungzilla)
 ![ Mesuara (https://github.com/mesuara)
 ![ Jorge (https://github.com/Jnavarr56)
