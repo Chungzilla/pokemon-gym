@@ -176,9 +176,6 @@ body{
      width: 150px;
    }
   
-  
-  
-  
   #history1{
    margin-top: 50px;
    margin-left: 60px;
@@ -191,4 +188,9 @@ body{
     margin-left: 50px;
     font-size: 15px;
     color: $imgBackground;
+  }
+  .pokemonSelected{
+    color: white;
+    background-color: blue;
+    
   }
