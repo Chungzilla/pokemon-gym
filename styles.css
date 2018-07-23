@@ -141,3 +141,7 @@ img {
   height: 60px; }
 
 /*# sourceMappingURL=styles.css.map */
+.pokemonSelected {
+  background-color: blue;
+  color: white;
+}
