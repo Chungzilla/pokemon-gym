@@ -1,12 +1,12 @@
 // ---------> MAIN JS/FUNCTION CALLS GOES HERE
-let firstMove = false;
 let index = 0;
 $("#btnYellow").click(()=>{
-    if (firstMove === false) {
-        $("#mainImg").html("<h1 id = 'trainerName'></h1>");   
-        firstMove = true;
+    if (safronGym[index].trainerName === "kanye") {
+        $("#mainImg").html(`<div id = 'trainerHolder'><h1 id = 'trainerName'>${safronGym[index].trainerName.toUpperCase()}<img id = 'badge' src= 'leader badge.png'></h1></div><img id ='profilePic' src = '${safronGym[index].profilePic}'>`);
     }
-    $("#trainerName").text(safronGym[index].trainerName.toUpperCase());
+    else {
+        $("#mainImg").html(`<h1 id = 'trainerName'>${safronGym[index].trainerName.toUpperCase()}</h1><img id ='profilePic' src = '${safronGym[index].profilePic}'>`);
+    }
     console.log("-------------------");
     console.log("-------------------");
     console.log("-------------------");
@@ -42,11 +42,12 @@ $("#btnYellow").click(()=>{
     }
 });
 $("#btnPink").click(()=>{
-    if (firstMove === false) {
-        $("#mainImg").html("<h1 id = 'trainerName'></h1>");
-        firstMove = true;
+    if (safronGym[index].trainerName === "kanye") {
+        $("#mainImg").html(`<div id = 'trainerHolder'><h1 id = 'trainerName'>${safronGym[index].trainerName.toUpperCase()}<img id = 'badge' src= 'leader badge.png'></h1></div><img id ='profilePic' src = '${safronGym[index].profilePic}'>`);
     }
-    $("#trainerName").text(safronGym[index].trainerName.toUpperCase());
+    else {
+        $("#mainImg").html(`<h1 id = 'trainerName'>${safronGym[index].trainerName.toUpperCase()}</h1><img id ='profilePic' src = '${safronGym[index].profilePic}'>`);
+    }
     console.log("-------------------");
     console.log("-------------------");
     console.log("-------------------");
