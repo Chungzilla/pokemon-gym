@@ -14,8 +14,9 @@
  
  
  # Built with 
- * JavaScript 
+ * JQuery 
  * Bootstrap
+ * Pokemon API
  
  # Authors
 * [Jazmine](https://github.com/Chungzilla)
