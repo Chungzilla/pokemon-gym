@@ -155,3 +155,7 @@ img {
   color: aquamarine; }
 
 /*# sourceMappingURL=styles.css.map */
+.pokemonSelected {
+  background-color: blue;
+  color: white;
+}
