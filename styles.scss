@@ -4,6 +4,7 @@ $imgBackground: aquamarine;
 body{
     background-image:url('back.png');
     background-color: green;
+    font-family: 'Roboto Mono', monospace;
 }
 #main{
     display: flex;
@@ -165,4 +166,22 @@ body{
   #badge{
     width: 60px;
     height: 60px;
+  }
+  
+  
+  
+  
+  
+  #history1{
+   margin-top: 50px;
+   margin-left: 60px;
+   font-size: 25px;
+   color: $imgBackground;
+  }
+  #history2{
+    width: 500px;
+    margin-top: 95px;
+    margin-left: 50px;
+    font-size: 15px;
+    color: $imgBackground;
   }
