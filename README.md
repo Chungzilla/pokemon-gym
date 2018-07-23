@@ -1,6 +1,6 @@
 # Pokemon-Gym 
 
-  ![Pokemon (https://chungzilla.github.io/pokemon-gym/)
+  [Pokemon](https://chungzilla.github.io/pokemon-gym/)
  
  
  Group project done at the NYCDA bootcamp.
@@ -18,6 +18,6 @@
  * Bootstrap
  
  # Authors
- ![ Jazmine (https://github.com/Chungzilla)
- ![ Mesuara (https://github.com/mesuara)
- ![ Jorge (https://github.com/Jnavarr56)
+* [Jazmine](https://github.com/Chungzilla)
+* [Mesuara](https://github.com/mesuara)
+* [Jorge](https://github.com/Jnavarr56)
