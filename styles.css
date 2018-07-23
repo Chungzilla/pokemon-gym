@@ -139,8 +139,8 @@ img {
 
 #badge {
   position: relative;
-  width: 60px;
-  height: 60px; }
+  width: 40px;
+  height: 40px; }
 
 #profilePic {
   border-radius: 50%;
@@ -150,7 +150,7 @@ img {
 #history1 {
   margin-top: 50px;
   margin-left: 60px;
-  font-size: 25px;
+  font-size: 20px;
   color: aquamarine; }
 
 #history2 {

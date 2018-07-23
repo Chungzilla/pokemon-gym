@@ -2,7 +2,7 @@
 let index = 0;
 $("#btnYellow").click(()=>{
     if (safronGym[index].trainerName === "kanye") {
-        $("#mainImg").html(`<div id = 'trainerHolder'><h1 id = 'trainerName'>${safronGym[index].trainerName.toUpperCase()}<img id = 'badge' src= 'leader badge.png'></h1></div><img id ='profilePic' src = '${safronGym[index].profilePic}'>`);
+        $("#mainImg").html(`<div id = 'trainerHolder'><h1 id = 'trainerName'>${safronGym[index].trainerName.toUpperCase()}<img id = 'badge' src= 'marsh-badge.png'></h1></div><img id ='profilePic' src = '${safronGym[index].profilePic}'>`);
     }
     else {
         $("#mainImg").html(`<h1 id = 'trainerName'>${safronGym[index].trainerName.toUpperCase()}</h1><img id ='profilePic' src = '${safronGym[index].profilePic}'>`);
@@ -47,7 +47,7 @@ $("#btnYellow").click(()=>{
 });
 $("#btnPink").click(()=>{
     if (safronGym[index].trainerName === "kanye") {
-        $("#mainImg").html(`<div id = 'trainerHolder'><h1 id = 'trainerName'>${safronGym[index].trainerName.toUpperCase()}<img id = 'badge' src= 'leader badge.png'></h1></div><img id ='profilePic' src = '${safronGym[index].profilePic}'>`);
+        $("#mainImg").html(`<div id = 'trainerHolder'><h1 id = 'trainerName'>${safronGym[index].trainerName.toUpperCase()}<img id = 'badge' src= 'http://www.wiu.edu/university_technology/stars/_images/star.png'></h1></div><img id ='profilePic' src = '${safronGym[index].profilePic}'>`);
     }
     else {
         $("#mainImg").html(`<h1 id = 'trainerName'>${safronGym[index].trainerName.toUpperCase()}</h1><img id ='profilePic' src = '${safronGym[index].profilePic}'>`);
