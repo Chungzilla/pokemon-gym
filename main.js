@@ -1,21 +1,11 @@
 // ---------> MAIN JS/FUNCTION CALLS GOES HERE
-let firstMove = false;
 let index = 0;
 $("#btnYellow").click(()=>{
-    if (firstMove === false) {
-        $("#mainImg").html("<h1 id = 'trainerName'></h1>");   
-        firstMove = true;
-    }
-    $("#trainerName").text(safronGym[index].trainerName.toUpperCase());
-    var badge = $("<img id = 'badge' src= 'leader badge.png'>");
     if (safronGym[index].trainerName === "kanye") {
-        $(badge).insertAfter("#trainerName");
-        $("#mainImg").css("flex-direction", "initial");
+        $("#mainImg").html(`<div id = 'trainerHolder'><h1 id = 'trainerName'>${safronGym[index].trainerName.toUpperCase()}</h1><img id = 'badge' src= 'leader badge.png'></div><img id ='profilePic' src = '${safronGym[index].profilePic}'>`);
     }
     else {
-        $("#mainImg").html("<h1 id = 'trainerName'></h1>");
-        $("#trainerName").text(safronGym[index].trainerName.toUpperCase());
-        $("#mainImg").css("flex-direction", "column");
+        $("#mainImg").html(`<h1 id = 'trainerName'>${safronGym[index].trainerName.toUpperCase()}</h1><img id ='profilePic' src = '${safronGym[index].profilePic}'>`);
     }
     console.log("-------------------");
     console.log("-------------------");
@@ -52,20 +42,11 @@ $("#btnYellow").click(()=>{
     }
 });
 $("#btnPink").click(()=>{
-    if (firstMove === false) {
-        $("#mainImg").html("<h1 id = 'trainerName'></h1>");
-        firstMove = true;
-    }
-    $("#trainerName").text(safronGym[index].trainerName.toUpperCase());
-    var badge = $("<img id = 'badge' src= 'leader badge.png'>");
     if (safronGym[index].trainerName === "kanye") {
-        $(badge).insertAfter("#trainerName");
-        $("#mainImg").css("flex-direction", "initial");
+        $("#mainImg").html(`<div id = 'trainerHolder'><h1 id = 'trainerName'>${safronGym[index].trainerName.toUpperCase()}</h1><img id = 'badge' src= 'leader badge.png'></div><img id ='profilePic' src = '${safronGym[index].profilePic}'>`);
     }
     else {
-        $("#mainImg").html("<h1 id = 'trainerName'></h1>");
-        $("#trainerName").text(safronGym[index].trainerName.toUpperCase());
-        $("#mainImg").css("flex-direction", "column");
+        $("#mainImg").html(`<h1 id = 'trainerName'>${safronGym[index].trainerName.toUpperCase()}</h1><img id ='profilePic' src = '${safronGym[index].profilePic}'>`);
     }
     console.log("-------------------");
     console.log("-------------------");
