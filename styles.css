@@ -139,7 +139,9 @@ img {
 
 #badge {
   width: 60px;
-  height: 60px; }
+  height: 60px; 
+  display: inline-block;
+}
 
 #history1 {
   margin-top: 50px;
@@ -158,4 +160,11 @@ img {
 .pokemonSelected {
   background-color: blue;
   color: white;
+}
+#trainerHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
 }
