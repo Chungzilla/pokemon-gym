@@ -2,7 +2,8 @@ $red: red;
 $imgBackground: aquamarine;
 
 body{
-    background-color:url('back.png');
+    background-image:url('back.png');
+    background-color: green;
 }
 #main{
     display: flex;
@@ -53,10 +54,12 @@ body{
     background-color: greenyellow;
     animation-delay: 1s;
   }
-  
   #mainImg{
+  
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     border: 3px solid black;
     width: 450px;
     height: 300px;
@@ -122,6 +125,8 @@ body{
   
   #secondImg{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
     border: 3px solid black;
     width: 450px;
@@ -151,4 +156,8 @@ body{
     100%{
       transform: rotate(360deg)
     }
+  }
+
+  #caption{
+    margin-top: 20px;
   }

@@ -1,8 +1,8 @@
 // ------->   TRAINER CLASS GOES HERE
-
 $("#btnPink").prop("disabled", true);
 $("#btnYellow").prop("disabled", true);
 let allAjaxDone = 0;
+let doneLoading = false;
 class trainerClass {
     constructor(pokemon1,pokemon2,pokemon3, trainerName) {
         this.myPokemonNames = [pokemon1,pokemon2,pokemon3];
@@ -10,7 +10,6 @@ class trainerClass {
         this.trainerName = trainerName;
     }
     getMyPokemon() {
-        $(`#${this.trainerName}Name`).html(`<h1>${this.trainerName.toUpperCase()}</h1>`);
         var self = this;
         console.log(`STARTING ${this.trainerName.toUpperCase()}'S AJAX CALL`);
         this.myPokemonNames.forEach(pokemon=>{
@@ -29,6 +28,7 @@ class trainerClass {
                         },1500);
                         $("#btnPink").prop("disabled", false);
                         $("#btnYellow").prop("disabled", false);
+                        doneLoading = true;
                     }
                 }
             }).fail((result)=> {
@@ -40,14 +40,14 @@ class trainerClass {
 let jazmine = new trainerClass("bulbasaur","meowth","squirtle", "jazmine");
 let messi = new trainerClass("victini", "butterfree", "mimikyu-disguised", "messi");
 let jorge = new trainerClass("voltorb", "geodude", "poliwag", "jorge");
-
 jazmine.getMyPokemon();
 messi.getMyPokemon();
 jorge.getMyPokemon();
-
 let safronGym = [jazmine,jorge,messi];
 console.log("ARRAY OF ALL 3 TRAINERS:");
 console.log(safronGym);
 console.log("-------------------");
 console.log("-------------------");
 console.log("-------------------");
+
+
