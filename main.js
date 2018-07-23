@@ -7,6 +7,16 @@ $("#btnYellow").click(()=>{
         firstMove = true;
     }
     $("#trainerName").text(safronGym[index].trainerName.toUpperCase());
+    var badge = $("<img id = 'badge' src= 'leader badge.png'>");
+    if (safronGym[index].trainerName === "kanye") {
+        $(badge).insertAfter("#trainerName");
+        $("#mainImg").css("flex-direction", "initial");
+    }
+    else {
+        $("#mainImg").html("<h1 id = 'trainerName'></h1>");
+        $("#trainerName").text(safronGym[index].trainerName.toUpperCase());
+        $("#mainImg").css("flex-direction", "column");
+    }
     console.log("-------------------");
     console.log("-------------------");
     console.log("-------------------");
@@ -47,6 +57,16 @@ $("#btnPink").click(()=>{
         firstMove = true;
     }
     $("#trainerName").text(safronGym[index].trainerName.toUpperCase());
+    var badge = $("<img id = 'badge' src= 'leader badge.png'>");
+    if (safronGym[index].trainerName === "kanye") {
+        $(badge).insertAfter("#trainerName");
+        $("#mainImg").css("flex-direction", "initial");
+    }
+    else {
+        $("#mainImg").html("<h1 id = 'trainerName'></h1>");
+        $("#trainerName").text(safronGym[index].trainerName.toUpperCase());
+        $("#mainImg").css("flex-direction", "column");
+    }
     console.log("-------------------");
     console.log("-------------------");
     console.log("-------------------");
