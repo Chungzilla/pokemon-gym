@@ -129,3 +129,5 @@ $(document).keyup(event=>{
         $(".pokemonSelected").click();
     }
 });
+
+

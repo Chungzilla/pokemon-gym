@@ -1,5 +1,13 @@
 $red: red;
 $imgBackground: aquamarine;
+$dotRadius: 50%;
+$gradientBigDot:linear-gradient(90deg, rgba(0,36,36,1) 0%, rgba(9,121,108,1) 0%, rgba(0,212,255,1) 100%);
+$pinkDot: linear-gradient(90deg, rgba(36,0,31,1) 0%, rgba(217,26,161,1) 100%, rgba(0,212,255,1) 100%);
+$orangeDot: linear-gradient(90deg, rgba(195,105,36,1) 41%, rgba(217,115,26,1) 55%, rgba(255,154,0,1) 100%);
+$greenDot: linear-gradient(90deg, rgba(47,195,36,1) 41%, rgba(217,103,26,1) 100%, rgba(255,154,0,1) 100%);
+@mixin boxShadow ($px){
+  box-shadow: $px $px $px $px #888888;
+}
 
 body{
     background-image:url('back.png');
@@ -11,6 +19,7 @@ body{
     flex-direction: row;
     justify-content: center;
     margin: 20px;
+    
   }
   #mainbox{
     height:800px;
@@ -19,6 +28,7 @@ body{
     border-top-left-radius:35px;
     border-top-right-radius: 35px;
     border-bottom-right-radius:35px; 
+    @include boxShadow(10px);
     
   }
   
@@ -32,6 +42,7 @@ body{
     
     border-radius: 50%;
     background-color: aqua;
+    background: $gradientBigDot;
     height: 60px;
     width: 60px;
     animation-duration: 2s;
@@ -40,19 +51,22 @@ body{
   .dot{
     
     background-color:pink;
+    background:$pinkDot ;
     height: 25px;
     width: 25px;
-    border-radius: 50%;
+    border-radius: $dotRadius;
     animation-delay: 300ms;
     animation-duration: 3s;
   }
   
   .dot.two{
     background-color: orange;
+    background: $orangeDot;
     animation-delay: 600ms
   }
   .dot.three{
     background-color: greenyellow;
+    background: $greenDot;
     animation-delay: 1s;
   }
   #mainImg{
@@ -121,6 +135,7 @@ body{
     border-top-left-radius:35px;
     border-top-right-radius: 35px;
     border-bottom-left-radius: 35px;
+    @include boxShadow(10px);
    
   }
   
