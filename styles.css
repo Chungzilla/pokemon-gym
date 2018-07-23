@@ -107,6 +107,8 @@ img {
 
 #secondImg {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
   border: 3px solid black;
   width: 450px;
