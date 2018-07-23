@@ -32,7 +32,11 @@ $("#btnYellow").click(()=>{
             else {
                 var imgUrl = pokemonObject.sprites.front_default;
             }
-            $("#modalDiv").html(`<img src = ${imgUrl}><h3>HP: ${pokemonObject.stats[5].base_stat}</h3><h3>Attack: ${pokemonObject.stats[4].base_stat}</h3><h3>Defense: ${pokemonObject.stats[3].base_stat}</h3>`);
+            var abilitiesList = [];
+            pokemonObject.abilities.forEach(pokemonAbility=>{
+                abilitiesList.push(pokemonAbility.ability.name);
+            });
+            $("#modalDiv").html(`<img src = ${imgUrl}><h3>HP: ${pokemonObject.stats[5].base_stat}</h3><h3>Attack: ${pokemonObject.stats[4].base_stat}</h3><h3>Abilities: ${abilitiesList.join(" ").toUpperCase()}</h3>`);
         });
         $("#secondImg").append(pokemon);
     });
@@ -73,7 +77,11 @@ $("#btnPink").click(()=>{
             else {
                 var imgUrl = pokemonObject.sprites.front_default;
             }
-            $("#modalDiv").html(`<img src = ${imgUrl}><h3>HP: ${pokemonObject.stats[5].base_stat}</h3><h3>Attack: ${pokemonObject.stats[4].base_stat}</h3><h3>Defense: ${pokemonObject.stats[3].base_stat}</h3>`);
+            var abilitiesList = [];
+            pokemonObject.abilities.forEach(pokemonAbility=>{
+                abilitiesList.push(pokemonAbility.ability.name);
+            });
+            $("#modalDiv").html(`<img src = ${imgUrl}><h3>HP: ${pokemonObject.stats[5].base_stat}</h3><h3>Attack: ${pokemonObject.stats[4].base_stat}</h3><h3>Abilities: ${abilitiesList.join(" ").toUpperCase()}</h3>`);
         });
         $("#secondImg").append(pokemon);
     });
