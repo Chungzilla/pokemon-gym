@@ -2,8 +2,9 @@ $red: red;
 $imgBackground: aquamarine;
 
 body{
-    background-color:url('back.png');
-    color: green;
+    background-image:url('back.png');
+    background-color: green;
+    font-family: 'Roboto Mono', monospace;
 }
 #main{
     display: flex;
@@ -54,10 +55,12 @@ body{
     background-color: greenyellow;
     animation-delay: 1s;
   }
-  
   #mainImg{
+  
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     border: 3px solid black;
     width: 450px;
     height: 300px;
@@ -123,6 +126,8 @@ body{
   
   #secondImg{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
     border: 3px solid black;
     width: 450px;
@@ -152,4 +157,31 @@ body{
     100%{
       transform: rotate(360deg)
     }
+  }
+
+  #caption{
+    margin-top: 20px;
+  }
+
+  #badge{
+    width: 60px;
+    height: 60px;
+  }
+  
+  
+  
+  
+  
+  #history1{
+   margin-top: 50px;
+   margin-left: 60px;
+   font-size: 25px;
+   color: $imgBackground;
+  }
+  #history2{
+    width: 500px;
+    margin-top: 95px;
+    margin-left: 50px;
+    font-size: 15px;
+    color: $imgBackground;
   }

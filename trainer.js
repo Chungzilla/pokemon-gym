@@ -37,13 +37,13 @@ class trainerClass {
         });
     }
 }
-let jazmine = new trainerClass("bulbasaur","meowth","squirtle", "jazmine");
+let kanye = new trainerClass("bulbasaur","meowth","squirtle", "kanye");
 let messi = new trainerClass("victini", "butterfree", "mimikyu-disguised", "messi");
 let jorge = new trainerClass("voltorb", "geodude", "poliwag", "jorge");
-jazmine.getMyPokemon();
+kanye.getMyPokemon();
 messi.getMyPokemon();
 jorge.getMyPokemon();
-let safronGym = [jazmine,jorge,messi];
+let safronGym = [kanye,jorge,messi];
 console.log("ARRAY OF ALL 3 TRAINERS:");
 console.log(safronGym);
 console.log("-------------------");
