@@ -1,9 +1,7 @@
 // ---------> MAIN JS/FUNCTION CALLS GOES HERE
-
 let firstMove = false;
 let index = 0;
-let yellowButton = document.getElementById('btnYellow');
-yellowButton.click(()=>{
+$("#btnYellow").click(()=>{
     if (firstMove === false) {
         $("#mainImg").html("<h1 id = 'trainerName'></h1>");   
         firstMove = true;
@@ -20,7 +18,7 @@ yellowButton.click(()=>{
     $("#secondImg").empty();
     var currentTrainer = safronGym[index].trainerName;
     safronGym[index].myPokemonObjects.forEach(pokemonObject=>{
-        var pokemon = $("<p data-target = '#showPokemon' data-toggle='modal'></p>");
+        var pokemon = $("<p data-target = '#showPokemon' data-toggle='modal' class = 'pokemonBox'></p>");
         pokemon.text(`${pokemonObject.name.toUpperCase()}`);
         pokemon.click(()=>{
             console.log("-------------------");
@@ -60,7 +58,7 @@ $("#btnPink").click(()=>{
     $("#secondImg").empty();
     var currentTrainer = safronGym[index].trainerName;
     safronGym[index].myPokemonObjects.forEach(pokemonObject=>{
-        var pokemon = $("<p data-target='#showPokemon'  data-toggle='modal'></p>");
+        var pokemon = $("<p data-target='#showPokemon'  data-toggle='modal' class = 'pokemonBox'></p>");
         pokemon.text(`${pokemonObject.name.toUpperCase()}`);
         pokemon.click(()=>{
             console.log("-------------------");
@@ -83,10 +81,42 @@ $("#btnPink").click(()=>{
         index = 0;
     }
 });
-
-
-
-
-
-
-
+let rightScreenIndex = 0;
+$(document).keyup(event=>{
+    if (doneLoading === false) {
+        return;
+    }
+    if (event.keyCode === 39) {
+        $("#btnPink").click();
+    }
+    else if (event.keyCode === 37) {
+        $("#btnYellow").click();
+    }
+    else if ((event.keyCode === 38 || event.keyCode === 40) && $("#secondImg").children().length > 0) {
+        if (event.keyCode === 38) {
+            console.log("UP");
+            var allPokemon = $("#secondImg").children();
+            rightScreenIndex --;
+            if (rightScreenIndex < 0) {
+                rightScreenIndex = allPokemon.length-1; 
+            }
+            console.log(rightScreenIndex);
+            $(".pokemonBox").removeClass("pokemonSelected");
+            allPokemon[rightScreenIndex].classList.add("pokemonSelected");
+        }
+        else {
+            console.log("DOWN");
+            var allPokemon = $("#secondImg").children();
+            rightScreenIndex ++;
+            if (rightScreenIndex === allPokemon.length) {
+                rightScreenIndex = 0; 
+            }
+            console.log(rightScreenIndex);
+            $(".pokemonBox").removeClass("pokemonSelected");
+            allPokemon[rightScreenIndex].classList.add("pokemonSelected");
+        }
+    }
+    if (event.keyCode === 13){
+        $(".pokemonSelected").click();
+    }
+});
