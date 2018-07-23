@@ -18,14 +18,14 @@ $("#btnYellow").click(()=>{
     $("#secondImg").empty();
     var currentTrainer = safronGym[index].trainerName;
     safronGym[index].myPokemonObjects.forEach(pokemonObject=>{
-        var pokemon = $("<p data-target = '#showPokemon' data-toggle='modal' class = 'pokemonBox'></p>");
+        var pokemon = $("<p data-target = '#important-msg' data-toggle='modal' class = 'pokemonBox'></p>");
         pokemon.text(`${pokemonObject.name.toUpperCase()}`);
         pokemon.click(()=>{
             console.log("-------------------");
             console.log(`${currentTrainer.toUpperCase()}'s  ${pokemonObject.name.toUpperCase()}`)
             console.log(pokemonObject);
             console.log("-------------------");
-            $("#pokemonModalName").text(pokemonObject.name.toUpperCase());
+            $(".modal-title").text(pokemonObject.name.toUpperCase());
             if (pokemonObject.id <= 721) {
                 var imgUrl = `http://www.pokestadium.com/sprites/xy/${pokemonObject.name}.gif`;
             }
@@ -58,21 +58,21 @@ $("#btnPink").click(()=>{
     $("#secondImg").empty();
     var currentTrainer = safronGym[index].trainerName;
     safronGym[index].myPokemonObjects.forEach(pokemonObject=>{
-        var pokemon = $("<p data-target='#showPokemon'  data-toggle='modal' class = 'pokemonBox'></p>");
+        var pokemon = $("<p data-target='#important-msg'  data-toggle='modal' class = 'pokemonBox'></p>");
         pokemon.text(`${pokemonObject.name.toUpperCase()}`);
         pokemon.click(()=>{
             console.log("-------------------");
             console.log(`${currentTrainer.toUpperCase()}'s  ${pokemonObject.name.toUpperCase()}`)
             console.log(pokemonObject);
             console.log("-------------------");
-            $("#pokemonModalName").text(pokemonObject.name.toUpperCase());
+            $(".modal-title").text(pokemonObject.name.toUpperCase());
             if (pokemonObject.id <= 721) {
                 var imgUrl = `http://www.pokestadium.com/sprites/xy/${pokemonObject.name}.gif`;
             }
             else {
                 var imgUrl = pokemonObject.sprites.front_default;
             }
-            $("#modalDiv").html(`<img src = ${imgUrl}><h5>HP: ${pokemonObject.stats[5].base_stat}</h5><h5>Attack: ${pokemonObject.stats[4].base_stat}</h5><h5>Defense: ${pokemonObject.stats[3].base_stat}</h5>`);
+            $("#modalDiv").html(`<img src = ${imgUrl}><h3>HP: ${pokemonObject.stats[5].base_stat}</h3><h3>Attack: ${pokemonObject.stats[4].base_stat}</h3><h3>Defense: ${pokemonObject.stats[3].base_stat}</h3>`);
         });
         $("#secondImg").append(pokemon);
     });
