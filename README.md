@@ -14,9 +14,9 @@
  
  
  # Built with 
- * JQuery 
- * Bootstrap
- * Pokemon API
+ * [JQuery](https://jquery.com/) - JavaScript library used for event-handeling, animation, and AJAX calls to Pokemon API 
+ * [Bootstrap](http://getbootstrap.com/docs/3.3/) - front-end framework used to style modals to render data
+ * [Pokemon API](https://pokeapi.co/) - modern RESTful API housing all of the Pokemon data
  
  # Authors
 * [Jazmine](https://github.com/Chungzilla)
