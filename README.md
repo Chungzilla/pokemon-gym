@@ -1,10 +1,6 @@
-# Pokemon-Gym 
+# Pokemon Gym 
 
-  [Pokemon](https://chungzilla.github.io/pokemon-gym/)
- 
- 
- Group project done at the NYCDA bootcamp.
- -Pokemon gym website showcasing all chosen pokemon from the prior trainer project by utilizing libraries written by individual group members.
+Website showcasing selected Pokemon an relative data via AJAX calls to API and OOP JavaScript
  
  Use the button left or right to switch between the trainers, click on the pokemon name to see more information about the pokemon. You can also use use the arrow keys on your keyboard to switch between trainers and pokemons. 
  
