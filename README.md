@@ -2,19 +2,17 @@
 
 Website showcasing selected Pokemon an relative data via AJAX calls to API and OOP JavaScript
  
- Use the button left or right to switch between the trainers, click on the pokemon name to see more information about the pokemon. You can also use use the arrow keys on your keyboard to switch between trainers and pokemons. 
+
+## Instructions
+Use the left or right on-screen buttons or left or right keys on your keyboard to navigate between the trainers. 
+Click on the Pokemon name to see information about the Pokemon.
  
+## Built with 
+* [JQuery](https://jquery.com/) - JavaScript library used for event-handeling, animation, and AJAX calls to Pokemon API 
+* [Bootstrap](http://getbootstrap.com/docs/3.3/) - front-end framework used to style modals to render data
+* [Pokemon API](https://pokeapi.co/) - modern RESTful API housing all of the Pokemon data
  
- 
- 
- 
- 
- # Built with 
- * [JQuery](https://jquery.com/) - JavaScript library used for event-handeling, animation, and AJAX calls to Pokemon API 
- * [Bootstrap](http://getbootstrap.com/docs/3.3/) - front-end framework used to style modals to render data
- * [Pokemon API](https://pokeapi.co/) - modern RESTful API housing all of the Pokemon data
- 
- # Authors
+## Authors
 * [Jazmine](https://github.com/Chungzilla)
 * [Mesuara](https://github.com/mesuara)
 * [Jorge](https://github.com/Jnavarr56)
